@@ -1,6 +1,6 @@
 {
   "name": "client-side-loader",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "A loader for audio, images, video and json from the web.",
   "main": "lib/preloader.js",
   "types": "index.d.ts",
