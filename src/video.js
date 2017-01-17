@@ -2,7 +2,7 @@ import Loader from './loader';
 
 class VideoLoader extends Loader {
 
-    _starLoad(url, name) {
+    _startLoad(url, name) {
         const file = document.createElement('video');
         file.onload  = () => this._onSuccess(url, name, file);
         file.onerror = (file, error) => this._onError(url, name, error);

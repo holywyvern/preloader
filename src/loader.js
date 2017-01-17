@@ -69,7 +69,7 @@ class Loader {
         return this._result[name] ? this._result[name].value : null;
     }
 
-    _starLoad(url, name) {
+    _startLoad(url, name) {
 
     }
 

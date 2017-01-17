@@ -2,7 +2,7 @@ import Loader from './loader';
 
 class JsonLoader extends Loader {
 
-    _starLoad(url, name) {
+    _startLoad(url, name) {
         const xhr = new XMLHttpRequest();
         xhr.open('get', url, true);
         xhr.responseType = 'json';
