@@ -57,8 +57,8 @@ class Loader {
         this._loading = true;
         const resources = Object.keys(this._result);
         this._loadSize = resources.length;
-        this.events.fire('start', resource, url);
         for (let name of resources) {
+            this.events.fire('start', asset.url, name);
             let asset = this._result[name];
             this._startLoad(asset.url, name);
         }
