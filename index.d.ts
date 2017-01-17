@@ -8,7 +8,7 @@ declare module "client-side-loader" {
          * @param name {string} The resource to get.
          * @return The resource, or null if the resource doesn't exists or wasn't loaded.
          */
-        get(name): R | null;
+        get(name: string): R | null;
         /**
          * Adds a new resource to load.
          * If the manager is loading, an error is thrown.
