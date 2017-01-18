@@ -35,8 +35,8 @@ class Loader {
 
     _onSuccess(url, name, resource) {
         this._loadSize--;
-        this.events.fire('load', resource, url, name);
         this._result[name].value = resource;
+        this.events.fire('load', resource, url, name);
         this._checkLoad();
     }
 
